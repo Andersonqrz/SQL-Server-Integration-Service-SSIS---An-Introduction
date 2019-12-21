@@ -1,19 +1,14 @@
 <?xml version="1.0"?>
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
-    <Name>SSISWorking</Name>
-    <LastWriteTime>2019-12-20T19:54:46.3277221Z</LastWriteTime>
+    <Name>PracticeActivity</Name>
+    <LastWriteTime>2019-12-20T20:29:45.6642378Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>SSISPackage.dtsx</Name>
-      <LastWriteTime>2019-12-20T19:56:04.6035898Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2019-12-20T19:58:28.8441226Z</LastWriteTime>
+      <Name>Package.dtsx</Name>
+      <LastWriteTime>2019-12-20T20:29:45.6316983Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
