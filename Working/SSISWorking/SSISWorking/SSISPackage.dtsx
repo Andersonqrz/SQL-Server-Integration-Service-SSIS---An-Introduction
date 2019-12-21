@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="SSISPackage"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{A776700B-E864-4114-8D89-C430BA37FF3B}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{7B7C5B89-603D-4708-8D79-6F93285EF690}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -112,8 +112,8 @@
               <connections>
                 <connection
                   refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[SSIS SQL Server OWSE]"
-                  connectionManagerRefId="Package.ConnectionManagers[SSIS SQL Server OWSE]"
+                  connectionManagerID="Package.ConnectionManagers[SSIS SQL Server]"
+                  connectionManagerRefId="Package.ConnectionManagers[SSIS SQL Server]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
                   name="OleDbConnection" />
               </connections>
@@ -325,8 +325,8 @@
               <connections>
                 <connection
                   refId="Package\Tarefa Fluxo de Dados\Origem OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[SSIS SQL Server OWSE]"
-                  connectionManagerRefId="Package.ConnectionManagers[SSIS SQL Server OWSE]"
+                  connectionManagerID="Package.ConnectionManagers[SSIS SQL Server]"
+                  connectionManagerRefId="Package.ConnectionManagers[SSIS SQL Server]"
                   description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
                   name="OleDbConnection" />
               </connections>
@@ -627,12 +627,12 @@
     </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
-<!--Se você editar manualmente esta seção e cometer algum erro, poderá excluí-la. -->
-<!--O pacote ainda poderá ser carregado normalmente, mas as informações de layout anteriores serão perdidas e o designer reorganizará automaticamente os elementos na superfície de design.-->
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
   Version="8">
-  <!--Cada nó abaixo conterá propriedades que não afetam o comportamento em tempo de execução.-->
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
@@ -649,7 +649,7 @@
     design-time-name="Package\Tarefa Fluxo de Dados">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="158,42"
           Id="Package\Tarefa Fluxo de Dados\Origem OLE DB"
@@ -677,16 +677,14 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,16.25,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarefa Fluxo de Dados\Origem OLE DB">
+    design-time-name="Package\Tarefa Fluxo de Dados\Destino OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -699,7 +697,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarefa Fluxo de Dados\Destino OLE DB">
+    design-time-name="Package\Tarefa Fluxo de Dados\Origem OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
