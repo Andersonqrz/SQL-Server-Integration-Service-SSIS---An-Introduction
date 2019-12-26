@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="SSISPackage"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{3202ED74-8B4D-4820-A3DA-D795B7DAF371}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{7CB6BB58-9B51-45C1-8F31-4F1F6018FE25}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -208,6 +208,12 @@
                   name="Entrada de Destino OLE DB">
                   <inputColumns>
                     <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[CustomerID]"
+                      cachedDataType="i2"
+                      cachedName="CustomerID"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CustomerID]"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem OLE DB.Outputs[Saída de Origem OLE DB].Columns[CustomerID]" />
+                    <inputColumn
                       refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Title]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -263,14 +269,6 @@
                       cachedName="Phone"
                       externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[Phone]"
                       lineageId="Package\Tarefa Fluxo de Dados\Origem OLE DB.Outputs[Saída de Origem OLE DB].Columns[Phone]" />
-                    <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[CustomerIDNew]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="5"
-                      cachedName="CustomerIDNew"
-                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CustomerID]"
-                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Outputs[Saída de Coluna Derivada].Columns[CustomerIDNew]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -734,29 +732,41 @@
         <NodeLayout
           Size="159,42"
           Id="Package\Tarefa Fluxo de Dados\Destino OLE DB"
-          TopLeft="133,225" />
+          TopLeft="129,169" />
         <NodeLayout
           Size="158,42"
           Id="Package\Tarefa Fluxo de Dados\Origem OLE DB"
-          TopLeft="124,22" />
+          TopLeft="133,72" />
         <NodeLayout
           Size="161,42"
           Id="Package\Tarefa Fluxo de Dados\Coluna Derivada"
           TopLeft="130,120" />
         <EdgeLayout
           Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem OLE DB]"
-          TopLeft="206.75,64">
+          TopLeft="291,93">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56"
+              EndConnector="0,39"
               Start="0,0"
-              End="0,48.5">
+              End="7.5,39">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.5" />
+                    End="18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,0"
+                    Point2="22.5,0"
+                    Point3="22.5,4" />
+                  <mssgle:LineSegment
+                    End="22.5,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,35"
+                    Point2="22.5,39"
+                    Point3="18.5,39" />
+                  <mssgle:LineSegment
+                    End="7.5,39" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -767,18 +777,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
-          TopLeft="211.5,162">
+          TopLeft="291,152.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63"
+              EndConnector="-3,37.3333333333333"
               Start="0,0"
-              End="0,55.5">
+              End="4.5,37.3333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.5" />
+                    End="18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,0"
+                    Point2="22.5,0"
+                    Point3="22.5,4" />
+                  <mssgle:LineSegment
+                    End="22.5,33.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5,33.3333333333333"
+                    Point2="22.5,37.3333333333333"
+                    Point3="18.5,37.3333333333333" />
+                  <mssgle:LineSegment
+                    End="4.5,37.3333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
