@@ -2,13 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSISWorking</Name>
-    <LastWriteTime>2019-12-20T20:57:00.2705477Z</LastWriteTime>
+    <LastWriteTime>2019-12-27T19:23:24.1442967Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>SSISPackage.dtsx</Name>
-      <LastWriteTime>2019-12-26T17:14:28.8292645Z</LastWriteTime>
+      <LastWriteTime>2019-12-27T17:29:29.4229158Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CondicionalSplit.dtsx</Name>
+      <LastWriteTime>2019-12-27T19:09:01.7244933Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>RowSampling.dtsx</Name>
+      <LastWriteTime>2019-12-27T19:23:54.9743536Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
