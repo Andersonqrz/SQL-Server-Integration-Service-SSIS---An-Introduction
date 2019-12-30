@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="PracticeActivity3"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{14D8DABC-BE96-45CB-987B-2B9C7143E02E}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{B4359066-582B-49A5-8CB9-A4E0606CEB50}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -667,14 +667,36 @@
         <NodeLayout
           Size="130,42"
           Id="Package\Tarefa Fluxo de Dados\Classificar"
-          TopLeft="477,321" />
+          TopLeft="481,240" />
         <NodeLayout
           Size="161,42"
           Id="Package\Tarefa Fluxo de Dados\Coluna Derivada"
-          TopLeft="456,422" />
+          TopLeft="460,341" />
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem OLE DB]"
+          TopLeft="545.5,179">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarefa Fluxo de Dados.Paths[Classificar Saída]"
-          TopLeft="539.25,363">
+          TopLeft="543.25,282">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -694,28 +716,6 @@
             <mssgm:EdgeLabel
               BoundingBox="-8,17.75,16,16"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem OLE DB]"
-          TopLeft="543.5,179">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,142"
-              Start="0,0"
-              End="0,134.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,134.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
