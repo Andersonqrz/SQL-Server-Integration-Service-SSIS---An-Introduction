@@ -11,11 +11,21 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="RowSampling"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{061D0302-523C-4755-B553-CEAEC6D42C6B}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{6E06EA4D-A2C9-4557-AC96-A59804505695}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gerenciador de Conexões do Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8D8B9048-3628-485C-8B30-269CEBCA39E9}"
+      DTS:ObjectName="Gerenciador de Conexões do Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\anderson.tavares\Documents\GitHub\SQL-Server-Integration-Service-SSIS-An-Introduction\Source Files\Input01.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LAPTOP-CMELSFMT.SSIS]"
       DTS:CreationName="OLEDB"
@@ -988,9 +998,17 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="134,42"
+          Id="Package\Tarefa Fluxo de Dados\Unselected"
+          TopLeft="601,322" />
+        <NodeLayout
           Size="158,42"
           Id="Package\Tarefa Fluxo de Dados\Origem OLE DB"
           TopLeft="412,85" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Tarefa Fluxo de Dados\Selected"
+          TopLeft="285,316" />
         <NodeLayout
           Size="192,42"
           Id="Package\Tarefa Fluxo de Dados\Amostragem de Linhas"
@@ -1017,14 +1035,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="122,42"
-          Id="Package\Tarefa Fluxo de Dados\Selected"
-          TopLeft="285,316" />
-        <NodeLayout
-          Size="134,42"
-          Id="Package\Tarefa Fluxo de Dados\Unselected"
-          TopLeft="601,322" />
         <EdgeLayout
           Id="Package\Tarefa Fluxo de Dados.Paths[Saída Selecionada de Exemplo]"
           TopLeft="465.333333333333,231">
