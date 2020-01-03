@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{4501A4F2-EB05-4F90-9CB3-572106620971}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{2970A49B-3A44-4C46-846B-E99C8F8D581B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -124,7 +124,7 @@
       DTS:ObjectName="Gerenciador de Conexões do Excel">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\anderson.tavares\Documents\GitHub\SQL-Server-Integration-Service-SSIS-An-Introduction\Source Files\Input01.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\anderson.tavares\Documents\GitHub\SQL-Server-Integration-Service-SSIS-An-Introduction\Source Files\Input01.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -312,22 +312,6 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[CustomerIDSort]"
-                      cachedDataType="i4"
-                      cachedName="CustomerIDSort"
-                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[CustomerIDSort]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Especifica as opções de comparação para os dados de caractere."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Especifica a ordem de classificação da coluna."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de CustomerID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -343,6 +327,38 @@
                           dataType="System.Int32"
                           description="Especifica a ordem de classificação da coluna."
                           name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[CustomerID]"
+                      cachedDataType="r8"
+                      cachedName="CustomerID"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[CustomerID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Coluna Derivada 1]"
+                      cachedDataType="i4"
+                      cachedName="Coluna Derivada 1"
+                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[Coluna Derivada 1]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -476,20 +492,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[CustomerIDSort]"
-                      dataType="i4"
-                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[CustomerIDSort]"
-                      name="CustomerIDSort"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
-                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[CustomerIDSort]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de CustomerID]"
                       codePage="1252"
                       dataType="str"
@@ -502,6 +504,33 @@
                           dataType="System.Int32"
                           description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
                           name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[CustomerID]"
+                      dataType="r8"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[CustomerID]"
+                      name="CustomerID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[CustomerID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Coluna Derivada 1]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Coluna Derivada 1]"
+                      name="Coluna Derivada 1"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[Coluna Derivada 1]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -591,12 +620,12 @@
                   synchronousInputId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Inputs[Entrada de Coluna Derivada]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[CustomerIDSort]"
+                      refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[Coluna Derivada 1]"
                       dataType="i4"
                       errorOrTruncationOperation="Computação"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[CustomerIDSort]"
-                      name="CustomerIDSort"
+                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[Coluna Derivada 1]"
+                      name="Coluna Derivada 1"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1529,11 +1558,12 @@
               version="1">
               <inputs>
                 <input
-                  refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1]"
-                  name="Unir Tudo Entrada 1">
+                  refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2]"
+                  hasSideEffects="true"
+                  name="Entrada Unir Tudo 2">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[CustomerID]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[CustomerID]"
                       cachedDataType="r8"
                       cachedName="CustomerID"
                       lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CustomerID]">
@@ -1546,7 +1576,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[NameStyle]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[NameStyle]"
                       cachedDataType="r8"
                       cachedName="NameStyle"
                       lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[NameStyle]">
@@ -1559,7 +1589,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Title]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Title]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Title"
@@ -1573,7 +1603,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[FirstName]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[FirstName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="FirstName"
@@ -1587,7 +1617,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[LastName]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[LastName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="LastName"
@@ -1601,7 +1631,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[CompanyName]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[CompanyName]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="CompanyName"
@@ -1615,7 +1645,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[SalesPerson]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[SalesPerson]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="SalesPerson"
@@ -1629,7 +1659,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[EmailAddress]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[EmailAddress]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="EmailAddress"
@@ -1643,7 +1673,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Phone]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Phone]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="Phone"
@@ -1657,7 +1687,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de CustomerID]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de CustomerID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1672,7 +1702,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de NameStyle]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de NameStyle]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1687,7 +1717,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de Title]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de Title]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1702,7 +1732,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de FirstName]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de FirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1717,7 +1747,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de LastName]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de LastName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1732,7 +1762,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de CompanyName]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de CompanyName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1747,7 +1777,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de SalesPerson]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de SalesPerson]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1762,7 +1792,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de EmailAddress]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de EmailAddress]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1777,7 +1807,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de Phone]"
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2].Columns[Cópia de Phone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
@@ -1938,10 +1968,10 @@
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2]"
+                  refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 3]"
                   dangling="true"
                   hasSideEffects="true"
-                  name="Entrada Unir Tudo 2">
+                  name="Entrada Unir Tudo 3">
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -2084,7 +2114,7 @@
               startId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada]" />
             <path
               refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Conversão de Dados]"
-              endId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1]"
+              endId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2]"
               name="Saída de Conversão de Dados"
               startId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados]" />
             <path
@@ -2132,134 +2162,102 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="160,42"
-          Id="Package\Tarefa Fluxo de Dados\Origem do Excel"
-          TopLeft="287,123" />
+          Size="127,42"
+          Id="Package\Tarefa Fluxo de Dados\Unir Tudo"
+          TopLeft="616,247" />
         <NodeLayout
           Size="213,42"
           Id="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples"
-          TopLeft="563,125" />
+          TopLeft="714,66" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 1"
+          TopLeft="597,337" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Tarefa Fluxo de Dados\Origem do Excel"
+          TopLeft="457,67" />
         <NodeLayout
           Size="161,42"
           Id="Package\Tarefa Fluxo de Dados\Coluna Derivada"
-          TopLeft="465,606" />
+          TopLeft="599,507" />
         <NodeLayout
           Size="182,42"
           Id="Package\Tarefa Fluxo de Dados\Conversão de Dados"
-          TopLeft="303,253" />
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem do Excel]"
-          TopLeft="367,165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="27,88"
-              Start="0,0"
-              End="27,80.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40"
-                    Point2="0,44"
-                    Point3="4,44" />
-                  <mssgle:LineSegment
-                    End="23,44" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23,44"
-                    Point2="27,44"
-                    Point3="27,48" />
-                  <mssgle:LineSegment
-                    End="27,80.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="127,42"
-          Id="Package\Tarefa Fluxo de Dados\Unir Tudo"
-          TopLeft="488,364" />
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Conversão de Dados]"
-          TopLeft="394,295">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="157.5,69"
-              Start="0,0"
-              End="157.5,61.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.5"
-                    Point2="0,34.5"
-                    Point3="4,34.5" />
-                  <mssgle:LineSegment
-                    End="153.5,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="153.5,34.5"
-                    Point2="157.5,34.5"
-                    Point3="157.5,38.5" />
-                  <mssgle:LineSegment
-                    End="157.5,61.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem de Arquivo Simples]"
-          TopLeft="669.5,167">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-98.1666666666666,197"
-              Start="0,0"
-              End="-98.1666666666666,189.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,112.729393468118" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,112.729393468118"
-                    Point2="0,116.729393468118"
-                    Point3="-4,116.729393468118" />
-                  <mssgle:LineSegment
-                    End="-94.1666666666666,116.729393468118" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-94.1666666666666,116.729393468118"
-                    Point2="-98.1666666666666,116.729393468118"
-                    Point3="-98.1666666666666,120.729393468118" />
-                  <mssgle:LineSegment
-                    End="-98.1666666666666,189.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="450,151" />
         <NodeLayout
           Size="130,42"
           Id="Package\Tarefa Fluxo de Dados\Classificar"
-          TopLeft="477,523" />
+          TopLeft="611,424" />
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Unir Tudo Saída 1]"
+          TopLeft="680.75,289">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem do Excel]"
+          TopLeft="539,109">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
+          TopLeft="679,379">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarefa Fluxo de Dados.Paths[Classificar Saída]"
-          TopLeft="543.75,565">
+          TopLeft="677.75,466">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2281,24 +2279,32 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 1"
-          TopLeft="464,437" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Unir Tudo Saída 1]"
-          TopLeft="550.25,406">
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Conversão de Dados]"
+          TopLeft="541,193">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31"
+              EndConnector="138.5,54"
               Start="0,0"
-              End="0,23.5">
+              End="138.5,46.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.5" />
+                    End="0,23" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23"
+                    Point2="0,27"
+                    Point3="4,27" />
+                  <mssgle:LineSegment
+                    End="134.5,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="134.5,27"
+                    Point2="138.5,27"
+                    Point3="138.5,31" />
+                  <mssgle:LineSegment
+                    End="138.5,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2308,19 +2314,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
-          TopLeft="545.5,479">
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="820.5,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44"
+              EndConnector="-121.166666666667,139"
               Start="0,0"
-              End="0,36.5">
+              End="-121.166666666667,131.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.5" />
+                    End="0,78.3623639191291" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,78.3623639191291"
+                    Point2="0,82.3623639191291"
+                    Point3="-4,82.3623639191291" />
+                  <mssgle:LineSegment
+                    End="-117.166666666667,82.3623639191291" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.166666666667,82.3623639191291"
+                    Point2="-121.166666666667,82.3623639191291"
+                    Point3="-121.166666666667,86.3623639191291" />
+                  <mssgle:LineSegment
+                    End="-121.166666666667,131.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
