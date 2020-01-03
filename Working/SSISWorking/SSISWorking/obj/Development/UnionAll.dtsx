@@ -1,0 +1,2349 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/3/2020 2:10:21 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-CMELSFMT"
+  DTS:CreatorName="LAPTOP-CMELSFMT\anderson.tavares"
+  DTS:DTSID="{EDE532AF-6504-4C10-A44F-4BB5F12FC11D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.68"
+  DTS:LocaleID="1046"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{4501A4F2-EB05-4F90-9CB3-572106620971}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gerenciador de Conexões de Arquivos Simples]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9EC87562-308A-4BC3-AA53-2CF72EBE51C1}"
+      DTS:ObjectName="Gerenciador de Conexões de Arquivos Simples">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1046"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\anderson.tavares\Documents\GitHub\SQL-Server-Integration-Service-SSIS-An-Introduction\Source Files\Input02.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{9E21269A-FEDC-4A46-B385-DE2C13BF22B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NameStyle"
+              DTS:DTSID="{0B87E68C-B74E-4180-8A37-1A092EEDDDB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{AF44FF59-F879-451B-8ADF-38338692D2CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FirstName"
+              DTS:DTSID="{5B248D59-D7E1-48E5-A12D-435D63A2AB8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastName"
+              DTS:DTSID="{7C61E9B3-0FC2-4A74-97B3-05A53CCFE20B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CompanyName"
+              DTS:DTSID="{5573641C-E012-4862-9C06-AE085999F805}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesPerson"
+              DTS:DTSID="{543B6E82-D4B3-4168-8480-09AFC2A0DE6E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{D0F21803-6759-4FED-9237-9718E64B5AE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{CECBD53F-699C-4945-96A8-8BACA44B5E3F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gerenciador de Conexões do Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6EF38CAF-50E0-407D-BB56-23604B04FD78}"
+      DTS:ObjectName="Gerenciador de Conexões do Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\anderson.tavares\Documents\GitHub\SQL-Server-Integration-Service-SSIS-An-Introduction\Source Files\Input01.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarefa Fluxo de Dados"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarefa Fluxo de Dados"
+      DTS:DTSID="{8B8CDF4B-500C-46A2-9AE2-6BD646063B35}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarefa Fluxo de Dados"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarefa Fluxo de Dados\Classificar"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Classificar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Classifica os dados de entrada em ordem crescente ou decrescente quando eles não podem ser classificados em sua origem. Por exemplo, classifique dados de vendas por 'customer id' antes de eles serem gravados em um arquivo simples e entregues a outro departamento. Observação: essa transformação não é recomendável para fluxos de dados grandes."
+              name="Classificar"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação Classificação remove linhas com valores de classificação duplicados."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o número máximo de threads a usar para classificação."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada]"
+                  name="Classificar Entrada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de NameStyle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Cópia de NameStyle"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de NameStyle]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de Title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de Title"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Title]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de FirstName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de FirstName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de LastName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de LastName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de CompanyName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de CompanyName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CompanyName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de SalesPerson]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de SalesPerson"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de SalesPerson]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de EmailAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de EmailAddress"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de EmailAddress]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de Phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de Phone"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Phone]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[CustomerIDSort]"
+                      cachedDataType="i4"
+                      cachedName="CustomerIDSort"
+                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[CustomerIDSort]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada].Columns[Cópia de CustomerID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Cópia de CustomerID"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída]"
+                  isSorted="true"
+                  name="Classificar Saída">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de NameStyle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de NameStyle]"
+                      name="Cópia de NameStyle">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de NameStyle]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de Title]"
+                      name="Cópia de Title">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Title]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de FirstName]"
+                      name="Cópia de FirstName">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de FirstName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de LastName]"
+                      name="Cópia de LastName">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de LastName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de CompanyName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de CompanyName]"
+                      name="Cópia de CompanyName">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CompanyName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de SalesPerson]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de SalesPerson]"
+                      name="Cópia de SalesPerson">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de SalesPerson]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de EmailAddress]"
+                      name="Cópia de EmailAddress">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de EmailAddress]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de Phone]"
+                      name="Cópia de Phone">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Phone]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[CustomerIDSort]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[CustomerIDSort]"
+                      name="CustomerIDSort"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[CustomerIDSort]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída].Columns[Cópia de CustomerID]"
+                      name="Cópia de CustomerID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarefa Fluxo de Dados\Coluna Derivada"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Coluna Derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+              description="Cria novos valores de coluna aplicando expressões a colunas de entrada da transformação. Crie novas colunas ou substitua as existentes. Por exemplo, concatene os valores das colunas 'first name' e 'last name' para formar uma coluna 'full name'."
+              name="Coluna Derivada"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Inputs[Entrada de Coluna Derivada]"
+                  description="Entrada para a Transformação Coluna Derivada"
+                  name="Entrada de Coluna Derivada">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Outputs[Saída de Coluna Derivada]"
+                  description="Saída Padrão da Transformação Coluna Derivada"
+                  exclusionGroup="1"
+                  name="Saída de Coluna Derivada"
+                  synchronousInputId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Inputs[Entrada de Coluna Derivada]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada]"
+                  description="Saída de Erro da Transformação Coluna Derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Coluna Derivada"
+                  synchronousInputId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Inputs[Entrada de Coluna Derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Coluna Derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+              description="Cria novos valores de coluna aplicando expressões a colunas de entrada da transformação. Crie novas colunas ou substitua as existentes. Por exemplo, concatene os valores das colunas 'first name' e 'last name' para formar uma coluna 'full name'."
+              name="Coluna Derivada 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Inputs[Entrada de Coluna Derivada]"
+                  description="Entrada para a Transformação Coluna Derivada"
+                  name="Entrada de Coluna Derivada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Inputs[Entrada de Coluna Derivada].Columns[Cópia de CustomerID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Cópia de CustomerID"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada]"
+                  description="Saída Padrão da Transformação Coluna Derivada"
+                  exclusionGroup="1"
+                  name="Saída de Coluna Derivada"
+                  synchronousInputId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Inputs[Entrada de Coluna Derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[CustomerIDSort]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computação"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada].Columns[CustomerIDSort]"
+                      name="CustomerIDSort"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expressão de Coluna Derivada"
+                          name="Expression">(DT_I4)#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expressão Amigável de Coluna Derivada"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)[Cópia de CustomerID]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Erro de Coluna Derivada]"
+                  description="Saída de Erro da Transformação Coluna Derivada"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Coluna Derivada"
+                  synchronousInputId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Inputs[Entrada de Coluna Derivada]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Erro de Coluna Derivada].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarefa Fluxo de Dados\Conversão de Dados"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversão de Dados;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversão de Dados"
+              name="Conversão de Dados"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados]"
+                  name="Entrada de Conversão de Dados">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[CustomerID]"
+                      cachedDataType="r8"
+                      cachedName="CustomerID"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CustomerID]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[NameStyle]"
+                      cachedDataType="r8"
+                      cachedName="NameStyle"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[NameStyle]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[Title]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Title"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Title]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="FirstName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="LastName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[CompanyName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CompanyName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CompanyName]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[SalesPerson]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="SalesPerson"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[SalesPerson]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="EmailAddress"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados].Columns[Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Phone"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Phone]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados]"
+                  exclusionGroup="1"
+                  name="Saída de Conversão de Dados"
+                  synchronousInputId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de CustomerID]"
+                      name="Cópia de CustomerID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CustomerID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de NameStyle]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de NameStyle]"
+                      name="Cópia de NameStyle"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[NameStyle]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de Title]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de Title]"
+                      name="Cópia de Title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Title]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de FirstName]"
+                      name="Cópia de FirstName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[FirstName]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de LastName]"
+                      name="Cópia de LastName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[LastName]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de CompanyName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de CompanyName]"
+                      name="Cópia de CompanyName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CompanyName]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de SalesPerson]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de SalesPerson]"
+                      name="Cópia de SalesPerson"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[SalesPerson]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de EmailAddress]"
+                      name="Cópia de EmailAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[EmailAddress]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de Phone]"
+                      name="Cópia de Phone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Phone]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Conversão de Dados"
+                  synchronousInputId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origem de Arquivo Simples;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Origem de Arquivo Simples"
+              localeId="1046"
+              name="Origem de Arquivo Simples"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica se colunas de comprimento zero são tratadas como nulas."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome de uma coluna de saída que contém o nome do arquivo. Se nenhum nome for especificado, nenhuma coluna de saída contendo o nome de arquivo será gerada."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gerenciador de Conexões de Arquivos Simples]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gerenciador de Conexões de Arquivos Simples]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples]"
+                  name="Saída de Origem de Arquivo Simples">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[CustomerID]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[CustomerID]"
+                      name="CustomerID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[NameStyle]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[NameStyle]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[NameStyle]"
+                      name="NameStyle"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Title]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Title]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Title]"
+                      name="Title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[FirstName]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[LastName]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[CompanyName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[CompanyName]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[CompanyName]"
+                      name="CompanyName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[SalesPerson]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[SalesPerson]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[SalesPerson]"
+                      name="SalesPerson"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[EmailAddress]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Phone]"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Phone]"
+                      name="Phone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[NameStyle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NameStyle" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[CompanyName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CompanyName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[SalesPerson]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SalesPerson" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Phone" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples]"
+                  isErrorOut="true"
+                  name="Saída de Erro de Origem de Arquivo Simples">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[Coluna de Saída de Erro de Origem de Arquivo Simples]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Coluna de Saída de Erro de Origem de Arquivo Simples"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[Coluna de Saída de Erro de Origem de Arquivo Simples]"
+                      name="Coluna de Saída de Erro de Origem de Arquivo Simples" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarefa Fluxo de Dados\Origem do Excel"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Origem do Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Origem do Excel"
+              name="Origem do Excel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="A variável que contém o comando SQL a ser executado."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="O mapeamento de parâmetros no comando SQL para variáveis."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gerenciador de Conexões do Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gerenciador de Conexões do Excel]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel]"
+                  name="Saída de Origem do Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CustomerID]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[CustomerID]"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CustomerID]"
+                      name="CustomerID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[NameStyle]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[NameStyle]"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[NameStyle]"
+                      name="NameStyle"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[Title]"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Title]"
+                      name="Title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[FirstName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[FirstName]"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[LastName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[LastName]"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CompanyName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[CompanyName]"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CompanyName]"
+                      name="CompanyName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[SalesPerson]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[SalesPerson]"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[SalesPerson]"
+                      name="SalesPerson"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[EmailAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[EmailAddress]"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Phone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[Phone]"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Phone]"
+                      name="Phone"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[CustomerID]"
+                      dataType="r8"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[NameStyle]"
+                      dataType="r8"
+                      name="NameStyle" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[Title]"
+                      dataType="wstr"
+                      length="255"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="255"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="255"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[CompanyName]"
+                      dataType="wstr"
+                      length="255"
+                      name="CompanyName" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[SalesPerson]"
+                      dataType="wstr"
+                      length="255"
+                      name="SalesPerson" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="255"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[Phone]"
+                      dataType="wstr"
+                      length="255"
+                      name="Phone" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel]"
+                  isErrorOut="true"
+                  name="Saída de Erro de Origem do Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[CustomerID]"
+                      dataType="r8"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[CustomerID]"
+                      name="CustomerID" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[NameStyle]"
+                      dataType="r8"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[NameStyle]"
+                      name="NameStyle" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[Title]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[Title]"
+                      name="Title" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[FirstName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[LastName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[CompanyName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[CompanyName]"
+                      name="CompanyName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[SalesPerson]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[SalesPerson]"
+                      name="SalesPerson" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[EmailAddress]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[EmailAddress]"
+                      name="EmailAddress" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[Phone]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[Phone]"
+                      name="Phone" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarefa Fluxo de Dados\Unir Tudo"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Unir Tudo;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Combina linhas de vários fluxos de dados sem classificação. Por exemplo, adicione novamente as linhas a um fluxo de dados após a correção de erros. Se a classificação for importante, é recomendável usar a transformação Mesclagem."
+              name="Unir Tudo"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1]"
+                  name="Unir Tudo Entrada 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[CustomerID]"
+                      cachedDataType="r8"
+                      cachedName="CustomerID"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CustomerID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[CustomerID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[NameStyle]"
+                      cachedDataType="r8"
+                      cachedName="NameStyle"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[NameStyle]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[NameStyle]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Title]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Title"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Title]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Title]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="FirstName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[FirstName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[FirstName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="LastName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[LastName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[LastName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[CompanyName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CompanyName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[CompanyName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[CompanyName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[SalesPerson]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="SalesPerson"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[SalesPerson]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[SalesPerson]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="EmailAddress"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[EmailAddress]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[EmailAddress]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Phone"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[Phone]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Phone]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de CustomerID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Cópia de CustomerID"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de CustomerID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de NameStyle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Cópia de NameStyle"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de NameStyle]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de NameStyle]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de Title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de Title"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de Title]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Title]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de FirstName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de FirstName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de FirstName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de LastName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de LastName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de LastName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de CompanyName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de CompanyName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de CompanyName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CompanyName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de SalesPerson]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de SalesPerson"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de SalesPerson]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de SalesPerson]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de EmailAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de EmailAddress"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de EmailAddress]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de EmailAddress]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1].Columns[Cópia de Phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Cópia de Phone"
+                      lineageId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados].Columns[Cópia de Phone]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Phone]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1]"
+                  hasSideEffects="true"
+                  name="Entrada Unir Tudo 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[CustomerID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerID"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[CustomerID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[NameStyle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NameStyle"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[NameStyle]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de NameStyle]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[Title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Title"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Title]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Title]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FirstName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[FirstName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de FirstName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LastName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[LastName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de LastName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[CompanyName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CompanyName"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[CompanyName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CompanyName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[SalesPerson]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesPerson"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[SalesPerson]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de SalesPerson]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[EmailAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EmailAddress"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[EmailAddress]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de EmailAddress]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1].Columns[Phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Phone"
+                      lineageId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Phone]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Identificação de linhagem de coluna de saída"
+                          name="OutputColumnLineageID">#{Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Phone]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 2]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Entrada Unir Tudo 2">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1]"
+                  name="Unir Tudo Saída 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[CustomerID]"
+                      dataType="r8"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[CustomerID]"
+                      name="CustomerID" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[NameStyle]"
+                      dataType="r8"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[NameStyle]"
+                      name="NameStyle" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Title]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Title]"
+                      name="Title" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[FirstName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[LastName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[CompanyName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[CompanyName]"
+                      name="CompanyName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[SalesPerson]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[SalesPerson]"
+                      name="SalesPerson" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[EmailAddress]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[EmailAddress]"
+                      name="EmailAddress" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Phone]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Phone]"
+                      name="Phone" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CustomerID]"
+                      name="Cópia de CustomerID" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de NameStyle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de NameStyle]"
+                      name="Cópia de NameStyle" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Title]"
+                      name="Cópia de Title" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de FirstName]"
+                      name="Cópia de FirstName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de LastName]"
+                      name="Cópia de LastName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CompanyName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de CompanyName]"
+                      name="Cópia de CompanyName" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de SalesPerson]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de SalesPerson]"
+                      name="Cópia de SalesPerson" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de EmailAddress]"
+                      name="Cópia de EmailAddress" />
+                    <outputColumn
+                      refId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1].Columns[Cópia de Phone]"
+                      name="Cópia de Phone" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarefa Fluxo de Dados.Paths[Classificar Saída]"
+              endId="Package\Tarefa Fluxo de Dados\Coluna Derivada.Inputs[Entrada de Coluna Derivada]"
+              name="Classificar Saída"
+              startId="Package\Tarefa Fluxo de Dados\Classificar.Outputs[Classificar Saída]" />
+            <path
+              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
+              endId="Package\Tarefa Fluxo de Dados\Classificar.Inputs[Classificar Entrada]"
+              name="Saída de Coluna Derivada"
+              startId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Outputs[Saída de Coluna Derivada]" />
+            <path
+              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Conversão de Dados]"
+              endId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Unir Tudo Entrada 1]"
+              name="Saída de Conversão de Dados"
+              startId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Outputs[Saída de Conversão de Dados]" />
+            <path
+              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem de Arquivo Simples]"
+              endId="Package\Tarefa Fluxo de Dados\Unir Tudo.Inputs[Entrada Unir Tudo 1]"
+              name="Saída de Origem de Arquivo Simples"
+              startId="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples]" />
+            <path
+              refId="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem do Excel]"
+              endId="Package\Tarefa Fluxo de Dados\Conversão de Dados.Inputs[Entrada de Conversão de Dados]"
+              name="Saída de Origem do Excel"
+              startId="Package\Tarefa Fluxo de Dados\Origem do Excel.Outputs[Saída de Origem do Excel]" />
+            <path
+              refId="Package\Tarefa Fluxo de Dados.Paths[Unir Tudo Saída 1]"
+              endId="Package\Tarefa Fluxo de Dados\Coluna Derivada 1.Inputs[Entrada de Coluna Derivada]"
+              name="Unir Tudo Saída 1"
+              startId="Package\Tarefa Fluxo de Dados\Unir Tudo.Outputs[Unir Tudo Saída 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
+<!--Se você editar manualmente esta seção e cometer algum erro, poderá excluí-la. -->
+<!--O pacote ainda poderá ser carregado normalmente, mas as informações de layout anteriores serão perdidas e o designer reorganizará automaticamente os elementos na superfície de design.-->
+<Objects
+  Version="8">
+  <!--Cada nó abaixo conterá propriedades que não afetam o comportamento em tempo de execução.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Tarefa Fluxo de Dados"
+          TopLeft="447,151" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tarefa Fluxo de Dados">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Tarefa Fluxo de Dados\Origem do Excel"
+          TopLeft="287,123" />
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples"
+          TopLeft="563,125" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada"
+          TopLeft="465,606" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Tarefa Fluxo de Dados\Conversão de Dados"
+          TopLeft="303,253" />
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem do Excel]"
+          TopLeft="367,165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27,88"
+              Start="0,0"
+              End="27,80.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40"
+                    Point2="0,44"
+                    Point3="4,44" />
+                  <mssgle:LineSegment
+                    End="23,44" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23,44"
+                    Point2="27,44"
+                    Point3="27,48" />
+                  <mssgle:LineSegment
+                    End="27,80.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="127,42"
+          Id="Package\Tarefa Fluxo de Dados\Unir Tudo"
+          TopLeft="488,364" />
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Conversão de Dados]"
+          TopLeft="394,295">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="157.5,69"
+              Start="0,0"
+              End="157.5,61.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.5"
+                    Point2="0,34.5"
+                    Point3="4,34.5" />
+                  <mssgle:LineSegment
+                    End="153.5,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="153.5,34.5"
+                    Point2="157.5,34.5"
+                    Point3="157.5,38.5" />
+                  <mssgle:LineSegment
+                    End="157.5,61.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="669.5,167">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-98.1666666666666,197"
+              Start="0,0"
+              End="-98.1666666666666,189.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,112.729393468118" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,112.729393468118"
+                    Point2="0,116.729393468118"
+                    Point3="-4,116.729393468118" />
+                  <mssgle:LineSegment
+                    End="-94.1666666666666,116.729393468118" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-94.1666666666666,116.729393468118"
+                    Point2="-98.1666666666666,116.729393468118"
+                    Point3="-98.1666666666666,120.729393468118" />
+                  <mssgle:LineSegment
+                    End="-98.1666666666666,189.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Tarefa Fluxo de Dados\Classificar"
+          TopLeft="477,523" />
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Classificar Saída]"
+          TopLeft="543.75,565">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,8.75,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 1"
+          TopLeft="464,437" />
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Unir Tudo Saída 1]"
+          TopLeft="550.25,406">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31"
+              Start="0,0"
+              End="0,23.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
+          TopLeft="545.5,479">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarefa Fluxo de Dados\Origem do Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
