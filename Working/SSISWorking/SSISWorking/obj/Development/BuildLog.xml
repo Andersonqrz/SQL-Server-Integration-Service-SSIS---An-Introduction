@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSISWorking</Name>
-    <LastWriteTime>2020-01-03T17:13:45.8002751Z</LastWriteTime>
+    <LastWriteTime>2020-01-06T20:00:44.0665876Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -28,7 +28,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>UnionAll.dtsx</Name>
-      <LastWriteTime>2020-01-03T19:18:06.4731819Z</LastWriteTime>
+      <LastWriteTime>2020-01-06T19:48:38.5964849Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Auditing.dtsx</Name>
+      <LastWriteTime>2020-01-06T20:07:53.9393504Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
