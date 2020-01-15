@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{47B42142-D787-458F-88CA-6BC419E919B0}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{7B7C7090-62F3-4A98-B455-3BFE3F9EE63E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2459,94 +2459,72 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="158,42"
-          Id="Package\Tarefa Fluxo de Dados\Origem OLE DB"
-          TopLeft="35,49" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada"
-          TopLeft="28,367" />
-        <NodeLayout
           Size="123,42"
           Id="Package\Tarefa Fluxo de Dados\Auditoria"
-          TopLeft="45,130" />
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem OLE DB]"
-          TopLeft="110.25,91">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39"
-              Start="0,0"
-              End="0,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="170,96" />
+        <NodeLayout
+          Size="222,42"
+          Id="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples 1"
+          TopLeft="803,62" />
         <NodeLayout
           Size="170,42"
           Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 1"
-          TopLeft="29,208" />
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Auditoria Saída 1]"
-          TopLeft="110.25,172">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36"
-              Start="0,0"
-              End="0,28.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="154,174" />
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Tarefa Fluxo de Dados\Auditoria 1"
+          TopLeft="735,324" />
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Tarefa Fluxo de Dados\Multicast 1"
+          TopLeft="741,407" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada"
+          TopLeft="153,333" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Tarefa Fluxo de Dados\Origem OLE DB"
+          TopLeft="160,15" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Tarefa Fluxo de Dados\Classificar"
+          TopLeft="739,237" />
         <NodeLayout
           Size="123,42"
           Id="Package\Tarefa Fluxo de Dados\Multicast"
-          TopLeft="45,284" />
+          TopLeft="170,250" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Tarefa Fluxo de Dados\Agregação 1"
+          TopLeft="959,409" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 4"
+          TopLeft="943,495" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 3"
+          TopLeft="721,493" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\Tarefa Fluxo de Dados\Unir Tudo"
+          TopLeft="734,154" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 2"
+          TopLeft="339,330" />
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples"
+          TopLeft="577,62" />
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Tarefa Fluxo de Dados\Agregação"
+          TopLeft="364,251" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
-          TopLeft="110.25,250">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Multicast Saída 1]"
-          TopLeft="107.5,326">
+          Id="Package\Tarefa Fluxo de Dados.Paths[Unir Tudo Saída 1]"
+          TopLeft="800.75,196">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2566,96 +2544,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 2"
-          TopLeft="214,364" />
-        <NodeLayout
-          Size="132,42"
-          Id="Package\Tarefa Fluxo de Dados\Agregação"
-          TopLeft="239,285" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[2 de Saída Multicast]"
-          TopLeft="168,305.5">
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem OLE DB]"
+          TopLeft="235.25,57">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71,0"
+              EndConnector="0,39"
               Start="0,0"
-              End="63.5,0">
+              End="0,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="63.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Agregação 1]"
-          TopLeft="302,327">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37"
-              Start="0,0"
-              End="0,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="213,42"
-          Id="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples"
-          TopLeft="577,62" />
-        <NodeLayout
-          Size="222,42"
-          Id="Package\Tarefa Fluxo de Dados\Origem de Arquivo Simples 1"
-          TopLeft="803,62" />
-        <NodeLayout
-          Size="127,42"
-          Id="Package\Tarefa Fluxo de Dados\Unir Tudo"
-          TopLeft="734,154" />
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem de Arquivo Simples]"
-          TopLeft="683.5,104">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="94.1666666666666,50"
-              Start="0,0"
-              End="94.1666666666666,42.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.6267496111975" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.6267496111975"
-                    Point2="0,29.6267496111975"
-                    Point3="4,29.6267496111975" />
-                  <mssgle:LineSegment
-                    End="90.1666666666666,29.6267496111975" />
-                  <mssgle:CubicBezierSegment
-                    Point1="90.1666666666666,29.6267496111975"
-                    Point2="94.1666666666666,29.6267496111975"
-                    Point3="94.1666666666666,33.6267496111975" />
-                  <mssgle:LineSegment
-                    End="94.1666666666666,42.5" />
+                    End="0,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2698,24 +2600,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Tarefa Fluxo de Dados\Classificar"
-          TopLeft="739,237" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Unir Tudo Saída 1]"
-          TopLeft="800.75,196">
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="683.5,104">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41"
+              EndConnector="94.1666666666666,50"
               Start="0,0"
-              End="0,33.5">
+              End="94.1666666666666,42.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5" />
+                    End="0,25.6267496111975" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.6267496111975"
+                    Point2="0,29.6267496111975"
+                    Point3="4,29.6267496111975" />
+                  <mssgle:LineSegment
+                    End="90.1666666666666,29.6267496111975" />
+                  <mssgle:CubicBezierSegment
+                    Point1="90.1666666666666,29.6267496111975"
+                    Point2="94.1666666666666,29.6267496111975"
+                    Point3="94.1666666666666,33.6267496111975" />
+                  <mssgle:LineSegment
+                    End="94.1666666666666,42.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2724,66 +2634,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 4"
-          TopLeft="943,495" />
-        <NodeLayout
-          Size="141,42"
-          Id="Package\Tarefa Fluxo de Dados\Agregação 1"
-          TopLeft="959,409" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Tarefa Fluxo de Dados\Coluna Derivada 3"
-          TopLeft="721,493" />
-        <NodeLayout
-          Size="132,42"
-          Id="Package\Tarefa Fluxo de Dados\Multicast 1"
-          TopLeft="741,407" />
         <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[Multicast Saída 11]"
-          TopLeft="806.5,449">
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Coluna Derivada]"
+          TopLeft="235.25,216">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,36.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8,10.25,16,16"
+              BoundingBox="-8,5.25,16,16"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Tarefa Fluxo de Dados.Paths[1 de Saída Multicast]"
-          TopLeft="873,429">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="86,0"
-              Start="0,0"
-              End="78.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="78.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2805,15 +2677,75 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,10.25,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="132,42"
-          Id="Package\Tarefa Fluxo de Dados\Auditoria 1"
-          TopLeft="735,324" />
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Saída de Agregação 1]"
+          TopLeft="427,293">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Multicast Saída 11]"
+          TopLeft="806.5,449">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Multicast Saída 1]"
+          TopLeft="232.5,292">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarefa Fluxo de Dados.Paths[Classificar Saída]"
           TopLeft="802.5,279">
@@ -2850,6 +2782,72 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[Auditoria Saída 1]"
+          TopLeft="235.25,138">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[2 de Saída Multicast]"
+          TopLeft="293,271.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71,0"
+              Start="0,0"
+              End="63.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="63.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados.Paths[1 de Saída Multicast]"
+          TopLeft="873,429">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86,0"
+              Start="0,0"
+              End="78.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="78.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
